@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Create Event - EMS</title>
+</head>
+<body>
+    <header>
+        <h1>Create New Event</h1>
+        <nav>
+            <ul>
+                <a href="index.html">Home</a>
+                <a href="dashboard.html">Dashboard</a>
+                <a href="events.html">Events</a>
+                <a href="announcements.html">Announcements</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+                <a href="logout.php">Logout</a>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <form action="php/create_event.php" method="POST">
+            <fieldset>
+                <legend>Event Details</legend>
+                <label for="title">Event Title:</label>
+                <input type="text" id="title" name="title" required>
+                
+                <label for="description">Description:</label>
+                <textarea id="description" name="description" rows="4" required></textarea>
+                
+                <label for="date">Date:</label>
+                <input type="date" id="date" name="date" required>
+                
+                <label for="location">Location:</label>
+                <input type="text" id="location" name="location" required>
+            </fieldset>
+            
+            <fieldset>
+                <legend>Registration Settings</legend>
+                <label for="reg_start_date">Registration Start Date:</label>
+                <input type="date" id="reg_start_date" name="reg_start_date" required>
+                
+                <label for="reg_end_date">Registration End Date:</label>
+                <input type="date" id="reg_end_date" name="reg_end_date" required>
+                
+                <label for="ticket_price">Ticket Price:</label>
+                <input type="number" id="ticket_price" name="ticket_price" step="0.01" min="0" required>
+            </fieldset>
+            
+            <fieldset>
+                <legend>Speaker/Performer Information</legend>
+                <label for="speaker">Speaker/Performer Name:</label>
+                <input type="text" id="speaker" name="speaker">
+                
+                <label for="speaker_bio">Speaker/Performer Bio:</label>
+                <textarea id="speaker_bio" name="speaker_bio" rows="4"></textarea>
+            </fieldset>
+            
+            <button type="submit">Create Event</button>
+        </form>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section about">
+                <h3>About EMS</h3>
+                <p>EMS is an Event Management System designed to streamline event planning and management processes.</p>
+                <div class="socials">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-x"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            <div class="footer-section links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <a href="dashboard.html">Dashboard</a><br>
+                    <a href="events.html">Events</a><br>
+                    <a href="announcements.html">Announcements</a><br>
+                    <a href="registration.html">Registration</a><br>
+                    <a href="support.html">Support</a><br>
+                    <a href="about.html">About</a><br>
+                    <a href="legal.html">Legal</a><br>
+                </ul>
+            </div>
+            <div class="footer-section contact">
+                <h3>Contact Us</h3>
+                <p>Email: support@ems.com</p>
+                <p>Phone: +123 456 7890</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2024 EMS | Designed by YourName
+        </div>
+    </footer>
+</body>
+</html>

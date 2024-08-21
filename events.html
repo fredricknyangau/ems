@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Events - EMS</title>
+</head>
+<body>
+    <header>
+        <h1>Events</h1>
+        <nav>
+            <ul>
+                <a href="index.html">Home</a>
+                <a href="dashboard.html">Dashboard</a>
+                <a href="announcements.html">Announcements</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+                <a href="logout.php">Logout</a>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>View All Events</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Event Name</th>
+                        <th>Date</th>
+                        <th>Location</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Sample Event 1</td>
+                        <td>2024-08-10</td>
+                        <td>Location 1</td>
+                        <td>
+                            <a href="view-event.html?id=1">View</a> |
+                            <a href="edit-event.html?id=1">Edit</a> |
+                            <a href="delete-event.php?id=1">Delete</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Sample Event 2</td>
+                        <td>2024-09-15</td>
+                        <td>Location 2</td>
+                        <td>
+                            <a href="view-event.html?id=2">View</a> |
+                            <a href="edit-event.html?id=2">Edit</a> |
+                            <a href="delete-event.php?id=2">Delete</a>
+                        </td>
+                    </tr>
+                    <!-- More events can be listed here -->
+                </tbody>
+            </table>
+            <a href="create_event.html" class="button">Create New Event</a>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section about">
+                <h3>About EMS</h3>
+                <p>EMS is an Event Management System designed to streamline event planning and management processes.</p>
+                <div class="socials">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-x"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            <div class="footer-section links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <a href="dashboard.html">Dashboard</a><br>
+                    <a href="events.html">Events</a><br>
+                    <a href="announcements.html">Announcements</a><br>
+                    <a href="registration.html">Registration</a><br>
+                    <a href="support.html">Support</a><br>
+                    <a href="about.html">About</a><br>
+                    <a href="legal.html">Legal</a><br>
+                </ul>
+            </div>
+            <div class="footer-section contact">
+                <h3>Contact Us</h3>
+                <p>Email: support@ems.com</p>
+                <p>Phone: +123 456 7890</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2024 EMS | Designed by YourName
+        </div>
+    </footer>
+</body>
+</html>
